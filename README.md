@@ -21,5 +21,6 @@ Click the 'Next' button at the bottom right of the 'New Device Activation' dialo
 ### Next Steps
 When the 'New Device Activation' dialog is closed, you will see a list of devices associated with that blueprint, their online/offline status, and the AuthToken. &nbsp; You can add more devices by click the 'New Device' button on this page. &nbsp;
 
+From this point you need to create a Blynk webhook, and a Particle integration webhook. &nbsp; All of the details on how to do this are available by clicking on the 'Read the tutorial' button on the template 'Home' tab. &nbsp;
 
 ## Related Links
