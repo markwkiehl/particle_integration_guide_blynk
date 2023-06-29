@@ -1,7 +1,7 @@
 # particle_integration_guide_blynk
 A guide to connecting Particle to Blynk
 
-![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/blob/5131efbb45fa8001d321e987ee1007c9a9108315/Blynk%2BParticle.png "Particle + Blynk")
+![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/dc9755b4f964f6f0454ab2ead3860d36c17260f1/Blynk%2BParticle.png "Particle + Blynk")
 
 Blynk is hardware agnostic platform that provides a no code web dashboard and mobile apps for visualization of data, and remote control of any IoT device. &nbsp; Both the native mobile apps for iOS and Android and the web dashboard are built with drag-and-drop widgets, eliminating the need to write code for the front-end. &nbsp; Blynk also includes other tools such as over-the-air (OTA), device provisioning, user management, alerts and notifications, automations, and data analytics. &nbsp; 
 
