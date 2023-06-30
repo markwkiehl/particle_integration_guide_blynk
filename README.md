@@ -14,7 +14,7 @@ In June 2023, Blynk released a new feature called [**Blueprints**](https://blynk
 From the Blynk.Console, navigate to 'Templates' -> 'All Blueprints' -> '**Particle Device**'. &nbsp;  A detailed guide will display on how to use the blueprint. &nbsp; In the upper right of the page, click the 'Use Blueprint' button. &nbsp; When the blueprint configuration is complete, the device template will appear and you can click on the tabs such as 'Datastreams' and 'Dashboard' to see what was prepared. &nbsp; 
 
 ### Activate New Blynk Device
-From the Blynk.Console templates 'Home' tab, click on 'Activate New Device'. &nbsp; A 'New Device Activation' dialog will appear. &nbsp; Click the 'Generate AuthToken' and then securely store this token. &nbsp; 
+While still in the Blynk.Console templates 'Home' tab, click on 'Activate New Device'. &nbsp; A 'New Device Activation' dialog will appear. &nbsp; Click the 'Generate AuthToken' and then securely store this token. &nbsp; 
 
 ### Get the Firmware
 Click the 'Next' button at the bottom right of the 'New Device Activation' dialog and the complete firmware code with that Blynk AuthToken will appear. &nbsp; Copy or download that code and install it to your Particle device. &nbsp;  Click the 'Firmware Uploaded' button when you are finished. &nbsp;
