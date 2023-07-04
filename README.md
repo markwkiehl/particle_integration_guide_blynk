@@ -102,15 +102,13 @@ From this point you need to create a Blynk webhook, and a Particle integration w
 #### Next Steps
 From this point you need to create a Blynk webhook, and a Particle integration webhook. &nbsp; All of the details on how to do this follow in the sections 'Create Blynk Webhook', 'Create Particle Integration Webhook', and 'Testing'' that follow'. &nbsp;
 
-## 3. Create Blynk Webhook
+## 3. Create Particle Integration Webhook
 
-## 4. Create Particle Integration Webhook
+## 4. Create a Particle Access Token
 
-## 5. Create a Particle Access Token
+## 5. Create the Blynk Webhook
 
-## 6. Create the Blynk Webhook
-
-## 7. Testing
+## 6. Testing
 
 ## Troubleshooting
 
