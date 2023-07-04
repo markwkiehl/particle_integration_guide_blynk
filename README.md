@@ -5,13 +5,9 @@ A guide to connecting Particle to Blynk
 
 Blynk is hardware agnostic platform that provides a no code web dashboard and mobile apps for visualization of data, and remote control of any IoT device. &nbsp; Both the native mobile apps for iOS and Android, and the web dashboard are built with drag-and-drop widgets, eliminating the need to write code for the front end. &nbsp; Blynk also includes other tools such as over-the-air (OTA), device provisioning, user management, organaizations, alerts and notifications, automations, and data analytics. &nbsp; 
 
-After configuring this integration, any Particle device 
-(Tracker One, Tracker SoM, Boron, B Series SoM, Photon 2, P2, Argon,
-Photon, Electron, E Series, Core) running the provided firmware
-will be sending two channels of simulated data from the hardware to
-Blynk. &nbsp; One channel will be integer values, and the other will be
-a floating point value. &nbsp; The data sent will be visualized on the
-Blynk web dashboard or mobile app in both a chart and a value display. &nbsp;  Additionally, a switch widget on the web dashboard and mobile app will send data to the hardware to control it. &nbsp; The switch data is simply an ON/Off (1/0) state that will be sent back to Blynk by the firmware to control a Blynk LED widget, and it will toggle the state of the built-in LED on the Particle device if it exists. &nbbsp; 
+This integration will configure bi-directional communication between any [Particle](https://www.particle.io/) device and [Blynk IoT](https://blynk.io/). &nbsp; Both a Blynk web dashboard and mobile app will be generated that will display data from the Particle device, and they will be used to control the Particle device remotely.  
+
+Any Particle device (Tracker One, Tracker SoM, Boron, B Series SoM, Photon 2, P2, Argon, Photon, Electron, E Series, Core) running the provided firmware will be sending two channels of simulated sensor data from the hardware to Blynk. &nbsp; One channel will be integer values, and the other will be a floating point value. &nbsp; The data sent will be visualized on the Blynk web dashboard or mobile app in both a chart and a value display. &nbsp;  Additionally, a switch widget on the web dashboard and mobile app will send data to the hardware to control it. &nbsp; The switch data is simply an ON/Off (1/0) state that will be sent back to Blynk by the firmware to control a Blynk LED widget, and it will toggle the state of the built-in LED on the Particle device if it exists. &nbsp; A UTC based timestamp will also be displayed on the web dashboard and mobile app so the last time data was published from the Particle device will be known. &nbsp; 
 
 ## Configuring Blynk Services
 Navigate to Blynk online and either [login](https://blynk.cloud/dashboard/login) or [create a new account](https://blynk.cloud/dashboard/register). &nbsp; A FREE account is available, or check the [pricing](https://blynk.io/pricing) page for subscription options. &nbsp;
@@ -20,7 +16,7 @@ Two options exist for configuring Blynk services:
 1. Use the Particle Device Blueprint. &nbsp; This automatically configures Blynk datastreams and creates a web dashboard and mobile app with widgets. &nbsp;  It also assists in activating a device and configuring the firmware for the activated device. &nbsp;
 2. Manually configure the Blynk datastreams, web dashboard widgets and mobile app widgets, and activate a device and then configure the firmware with the device activation credentials. &nbsp; 
 
-The end result of the two options above is exactly the same. &nbsp;  Note that configuring the web dashboard and mobile app widgets requires no code. &nbsp;
+The end result of the two options above is exactly the same. &nbsp;  
 
 ### Use the Particle Device Blueprint
 In June 2023, Blynk released a new feature called [**Blueprints**](https://blynk.io/blog/meet-blueprints-your-pre-built-iot-solution). &nbsp;  A [blueprint](https://blynk.cloud/dashboard/blueprints/Library) is a pre-built IoT project template that includes a web and mobile dashboard, firmware examples, and a step-by-step tutorial to activate and start using the project. &nbsp;  The blueprint '**Particle Device**' provides firmware for a Particle device, and configures Blynk for bi-directional communication between **any** Particle device and Blynk. &nbsp; 
