@@ -65,13 +65,22 @@ The end result of the two options above is exactly the same. &nbsp;
 ### Use the Particle Device Blueprint
 In June 2023, Blynk released a new feature called [**Blueprints**](https://blynk.io/blog/meet-blueprints-your-pre-built-iot-solution). &nbsp;  A [blueprint](https://blynk.cloud/dashboard/blueprints/Library) is a pre-built IoT project template that includes a web and mobile dashboard, firmware examples, and a step-by-step tutorial to activate and start using the project. &nbsp;  The blueprint '**Particle Device**' provides firmware for a Particle device, and configures Blynk for bi-directional communication between **any** Particle device and Blynk. &nbsp; 
 
-From the Blynk.Console, navigate to 'Templates' -> 'All Blueprints' -> '**Particle Device**'. &nbsp;  A detailed guide will display on how to use the blueprint. &nbsp; In the upper right of the page, click the 'Use Blueprint' button. &nbsp; When the blueprint configuration is complete, the device template will appear and you can click on the tabs such as 'Datastreams' and 'Dashboard' to see what was prepared. &nbsp; 
+1. From the Blynk.Console, navigate to 'Templates' -> 'All Blueprints' -> '**Particle Device**'. &nbsp;  A detailed guide will display on how to use the blueprint. &nbsp; 
+2. In the upper right of the page, click the 'Use Blueprint' button. &nbsp; 
+3. When the blueprint configuration is complete, the device template will appear and you can click on the tabs such as 'Datastreams' and 'Dashboard' to see what was prepared. &nbsp; 
 
 #### Activate New Blynk Device
-While still in the Blynk.Console templates 'Home' tab, click on 'Activate New Device'. &nbsp; A 'New Device Activation' dialog will appear. &nbsp; Click the 'Generate AuthToken' and then securely store this token. &nbsp; 
+Every device that connects to Blynk requires activation in order to generate an AuthToken. &nbsp;
+
+1. While still in the Blynk.Console templates 'Home' tab, click on 'Activate New Device'. &nbsp; A 'New Device Activation' dialog will appear. &nbsp; 
+2. Click the 'Generate AuthToken' and then securely store this token. &nbsp; 
 
 #### Get the Firmware
-Click the 'Next' button at the bottom right of the 'New Device Activation' dialog and the complete firmware code with that Blynk AuthToken will appear. &nbsp; Copy or download that code and install it to your Particle device. &nbsp;  Click the 'Firmware Uploaded' button when you are finished. &nbsp;
+The firmware is compatible with any Particle device. &nbsp;
+
+1. Click the 'Next' button at the bottom right of the 'New Device Activation' dialog and the complete firmware code with that Blynk AuthToken will appear. &nbsp; 
+2. Copy or download that code and install it to your Particle device. &nbsp;  
+3. Click the 'Firmware Uploaded' button when you are finished. &nbsp;
 
 #### Next Steps
 When the 'New Device Activation' dialog is closed, you will see a list of devices associated with that blueprint, their online/offline status, and the AuthToken. &nbsp; You can add more devices by click the 'New Device' button on this page. &nbsp;
