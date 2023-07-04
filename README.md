@@ -53,8 +53,8 @@ The Particle hardware will also be controlled remotely from the Blynk web dashbo
 Navigate to Blynk online and either [login](https://blynk.cloud/dashboard/login) or [create a new account](https://blynk.cloud/dashboard/register). &nbsp; A FREE account is available, or check the [pricing](https://blynk.io/pricing) page for subscription options. &nbsp;
 
 Two options exist for configuring Blynk services:
-1. Use the Particle Device Blueprint. &nbsp; This automatically configures Blynk datastreams and creates a web dashboard and mobile app with widgets. &nbsp;  It also assists in activating a device and configuring the firmware for the activated device. &nbsp;
-2. Manually configure the Blynk datastreams, web dashboard widgets and mobile app widgets, and activate a device and then configure the firmware with the device activation credentials. &nbsp; 
+1. **Use the Particle Device Blueprint**. &nbsp; This automatically configures Blynk template, datastreams and creates a web dashboard and mobile app with widgets. &nbsp;  It also assists in activating a device and configuring the firmware for the activated device. &nbsp;
+2. **Manually Configure Blynk**.  Manually configure the Blynk template, datastreams, web dashboard widgets and mobile app widgets, and activate a device, and then configure the firmware with the device activation credentials. &nbsp; 
 
 The end result of the two options above is exactly the same. &nbsp;  
 
