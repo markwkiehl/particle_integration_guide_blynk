@@ -134,11 +134,11 @@ bool pub_result = Particle.publish(&quot;blynk_https_get&quot;, data, PRIVATE);
 
 6. The value ‘PARTICLE_PUBLISHED_AT’ for virtual pin V6 is a Particle pre-defined variable that provides a UTC timestamp for when the webhook is executed. &nbsp; At the bottom of the form, make sure the ‘ENFORCE SSL’ option is set to ‘Yes’, and then click the ‘SAVE’ button to save your changes. 
 
-![alt text](https://github.com/markwkiehl/particle_device_blueprint/raw/329686e5ebe01144375108bea2e7a770c57c4100/particle_device_blueprint%20(8).jpeg "New Integration")
+![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/a4f6f5beb63fc93c58233c2adb3fe6d357ca5d01/particle_device_blueprint%20(8).jpeg "New Integration")
 
 7. After you save your webhook, a summary of the configuration will be shown. &nbsp; Make sure it matches exactly what is shown below (except for the server address).
 
-![alt text](https://github.com/markwkiehl/particle_device_blueprint/raw/565ce0266ea6be870f859dd653dd0d3bd595fbf2/particle_device_blueprint%20(9).png "New Integration")
+![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/a4f6f5beb63fc93c58233c2adb3fe6d357ca5d01/particle_device_blueprint%20(9).png "New Integration")
 
 Note that the blueprint is designed to pass the unique BLYNK_AUTH_TOKEN defined in the firmware for each device to the Particle webhook as the variable ‘{{t}}’. &nbsp; This allows each device to call the same webhook, at the expense of increasing the cellular payload for each transmission by 32 bytes. &nbsp; You can learn more about Particle webhooks by visiting this [documentation link](https://docs.particle.io/reference/cloud-apis/webhooks/). 
 
