@@ -140,10 +140,17 @@ bool pub_result = Particle.publish(&quot;blynk_https_get&quot;, data, PRIVATE);
 
 ![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/a4f6f5beb63fc93c58233c2adb3fe6d357ca5d01/particle_device_blueprint%20(9).png "New Integration")
 
-Note that the firmware pass the unique BLYNK_AUTH_TOKEN defined for each device to the Particle webhook as the variable ‘{{t}}’. &nbsp; This allows each device to call the same webhook, at the expense of increasing the cellular payload for each transmission by 32 bytes. &nbsp; You can learn more about Particle webhooks by visiting this [documentation link](https://docs.particle.io/reference/cloud-apis/webhooks/). 
-
+Note that the firmware will pass the unique BLYNK_AUTH_TOKEN defined for each device to the Particle webhook as the variable ‘{{t}}’. &nbsp; This allows each device to call the same webhook, at the expense of increasing the cellular payload for each transmission by 32 bytes. &nbsp; You can learn more about Particle webhooks by visiting this [documentation link](https://docs.particle.io/reference/cloud-apis/webhooks/). 
 
 ## 4. Generate a Particle Access Token
+The Blynk webhook will need a Particle access token in order to make a Particle HTTP API call to the Particle cloud function. &nbsp;
+
+1. Login to your Particle account.
+2. Browse to the Particle documentation section ‘[Create a token (browser-based)](https://docs.particle.io/reference/cloud-apis/access-tokens/#create-a-token-browser-based-)’. 
+3. Enter your Particle login email and password into the form. &nbsp; If you have MFA (multi-factor authentication) enabled on your account, you will need your MFA code to generate the access token. 
+4. Click the ‘Create token’ button to generate a token. &nbsp; Keep this token confidential. 
+
+![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/c257e1b217dbcd2a2efb05ccbf25776940c10544/particle_device_blueprint%20(10).jpeg "Particle Access Token")
 
 ## 5. Create the Blynk Webhook
 
