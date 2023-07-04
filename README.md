@@ -12,7 +12,7 @@ Two options exist for configuring Blynk services:
 1. Use the Particle Device Blueprint. &nbsp; This automatically configures Blynk datastreams and creates a web dashboard and mobile app with widgets. &nbsp;  It also assists in activating a device and configuring the firmware for the activated device. &nbsp;
 2. Manually configure the Blynk datastreams, web dashboard widgets and mobile app widgets, and activate a device and then configure the firmware with the device activation credentials. &nbsp; 
 
-The end result of the two options above is exactly the same. &nbsp;
+The end result of the two options above is exactly the same. &nbsp;  Note that configuring the web dashboard and mobile app widgets requires no code. &nbsp;
 
 ### Use the Particle Device Blueprint
 In June 2023, Blynk released a new feature called [**Blueprints**](https://blynk.io/blog/meet-blueprints-your-pre-built-iot-solution). &nbsp;  A [blueprint](https://blynk.cloud/dashboard/blueprints/Library) is a pre-built IoT project template that includes a web and mobile dashboard, firmware examples, and a step-by-step tutorial to activate and start using the project. &nbsp;  The blueprint '**Particle Device**' provides firmware for a Particle device, and configures Blynk for bi-directional communication between **any** Particle device and Blynk. &nbsp; 
@@ -31,6 +31,12 @@ When the 'New Device Activation' dialog is closed, you will see a list of device
 From this point you need to create a Blynk webhook, and a Particle integration webhook. &nbsp; All of the details on how to do this are available by clicking on the 'Read the tutorial' button on the template 'Home' tab. &nbsp; Those details are repeated in the sections 'Create Blynk Webhook', 'Create Particle Integration Webhook', and 'Testing' that follow. &nbsp;
 
 ### Manually Configure Blynk (without using the Particle Device Blueprint)
+
+#### Configure Blynk Datastreams
+
+#### Configure Blynk Web Dashboard
+
+#### Configure Blynk App
 
 #### Activate New Blynk Device
 
