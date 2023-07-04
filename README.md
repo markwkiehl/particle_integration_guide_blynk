@@ -82,7 +82,7 @@ The firmware is compatible with any Particle device. &nbsp;
 2. Copy or download that code and install it to your Particle device. &nbsp;  
 3. Click the 'Firmware Uploaded' button when you are finished. &nbsp;
 
-#### Next Steps
+#### Next
 When the 'New Device Activation' dialog is closed, you will see a list of devices associated with that blueprint, their online/offline status, and the AuthToken. &nbsp; You can add more devices by click the 'New Device' button on this page. &nbsp;
 
 From this point you need to create a Blynk webhook, and a Particle integration webhook. &nbsp; All of the details on how to do this are available by clicking on the 'Read the tutorial' button on the template 'Home' tab. &nbsp; Those details are repeated in the sections 'Create Blynk Webhook', 'Create Particle Integration Webhook', and 'Testing' that follow. &nbsp;
@@ -99,7 +99,7 @@ From this point you need to create a Blynk webhook, and a Particle integration w
 
 #### Get the Firmware
 
-#### Next Steps
+#### Next
 From this point you need to create a Blynk webhook, and a Particle integration webhook. &nbsp; All of the details on how to do this follow in the sections 'Create Blynk Webhook', 'Create Particle Integration Webhook', and 'Testing'' that follow'. &nbsp;
 
 ## 3. Create Particle Integration Webhook
@@ -112,7 +112,7 @@ From this point you need to create a Blynk webhook, and a Particle integration w
 
 ## Troubleshooting
 
-## Conclusiong
+## Conclusion
 
 ## Next Steps
 
