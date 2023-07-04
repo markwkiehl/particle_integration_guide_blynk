@@ -49,7 +49,11 @@ The Particle hardware will also be controlled remotely from the Blynk web dashbo
 
 <!-- Tracker One, Tracker SOM, Boron, B Series SoM, Photon 2, P2, Argon, Photon, Electron, E Series, Core -->
 
-## Configuring Blynk Services
+## 1. Prepare Your Hardware
+1. All Particle devices will require suitable power connection and either a cellular or WiFi connection. &nbsp; 
+2. A virtual LED (Blynk widget) will be used for all hardware to push back data to Blynk and cause the LED widget to turn on or off.  Particle devices with a built-in LED connected to GPIO D7 GPIO D7 (Boron, Argon, Photon 2, Photon, Electron, Core) will be detected by the firmware and this physical LED will be turned ON/OFF in addition to the LED widget. 
+
+## 2. Configuring Blynk Services
 Navigate to Blynk online and either [login](https://blynk.cloud/dashboard/login) or [create a new account](https://blynk.cloud/dashboard/register). &nbsp; A FREE account is available, or check the [pricing](https://blynk.io/pricing) page for subscription options. &nbsp;
 
 Two options exist for configuring Blynk services:
@@ -89,7 +93,7 @@ From this point you need to create a Blynk webhook, and a Particle integration w
 #### Next Steps
 From this point you need to create a Blynk webhook, and a Particle integration webhook. &nbsp; All of the details on how to do this follow in the sections 'Create Blynk Webhook', 'Create Particle Integration Webhook', and 'Testing'' that follow'. &nbsp;
 
-## Create Blynk Webhook
+## 3. Create Blynk Webhook
 
 ## Create Particle Integraton Webhook
 
@@ -97,7 +101,7 @@ From this point you need to create a Blynk webhook, and a Particle integration w
 
 ## Related Links
 
-[Blynk Troubleshooting guide](https://docs.blynk.io/en/troubleshooting/general-issues)
-[Blynk Documentation](https://docs.blynk.io/)
-[How to connect a Particle device to Blynk](https://docs.blynk.io/en/hardware-guides/particle)
-[How to control a Particle device with Blynk](https://docs.blynk.io/en/hardware-guides/particle-part-ii)
+[Blynk Troubleshooting guide](https://docs.blynk.io/en/troubleshooting/general-issues)<br/>
+[Blynk Documentation](https://docs.blynk.io/)<br/>
+[How to connect a Particle device to Blynk](https://docs.blynk.io/en/hardware-guides/particle)<br/>
+[How to control a Particle device with Blynk](https://docs.blynk.io/en/hardware-guides/particle-part-ii)<br/>
