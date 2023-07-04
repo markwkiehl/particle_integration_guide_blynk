@@ -5,6 +5,14 @@ A guide to connecting Particle to Blynk
 
 Blynk is hardware agnostic platform that provides a no code web dashboard and mobile apps for visualization of data, and remote control of any IoT device. &nbsp; Both the native mobile apps for iOS and Android, and the web dashboard are built with drag-and-drop widgets, eliminating the need to write code for the front end. &nbsp; Blynk also includes other tools such as over-the-air (OTA), device provisioning, user management, organaizations, alerts and notifications, automations, and data analytics. &nbsp; 
 
+After configuring this integration, any Particle device 
+(Tracker One, Tracker SoM, Boron, B Series SoM, Photon 2, P2, Argon,
+Photon, Electron, E Series, Core) running the provided firmware
+will be sending two channels of simulated data from the hardware to
+Blynk. &nbsp; One channel will be integer values, and the other will be
+a floating point value. &nbsp; The data sent will be visualized on the
+Blynk web dashboard or mobile app in both a chart and a value display. &nbsp;  Additionally, a switch widget on the web dashboard and mobile app will send data to the hardware to control it. &nbsp; The switch data is simply an ON/Off (1/0) state that will be sent back to Blynk by the firmware to control a Blynk LED widget, and it will toggle the state of the built-in LED on the Particle device if it exists. &nbbsp; 
+
 ## Configuring Blynk Services
 Navigate to Blynk online and either [login](https://blynk.cloud/dashboard/login) or [create a new account](https://blynk.cloud/dashboard/register). &nbsp; A FREE account is available, or check the [pricing](https://blynk.io/pricing) page for subscription options. &nbsp;
 
@@ -52,3 +60,8 @@ From this point you need to create a Blynk webhook, and a Particle integration w
 ## Testing
 
 ## Related Links
+
+[Blynk Troubleshooting guide](https://docs.blynk.io/en/troubleshooting/general-issues)
+[Blynk Documentation](https://docs.blynk.io/)
+[How to connect a Particle device to Blynk](https://docs.blynk.io/en/hardware-guides/particle)
+[How to control a Particle device with Blynk](https://docs.blynk.io/en/hardware-guides/particle-part-ii)
