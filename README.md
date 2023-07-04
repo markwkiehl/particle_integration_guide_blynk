@@ -3,15 +3,19 @@ A guide to connecting Particle to Blynk
 
 ![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/dc9755b4f964f6f0454ab2ead3860d36c17260f1/Blynk%2BParticle.png "Particle + Blynk")
 
+## Introduction
 Blynk is hardware agnostic platform that provides a no code web dashboard and mobile apps for visualization of data, and remote control of any IoT device. &nbsp; Both the native mobile apps for iOS and Android, and the web dashboard are built with drag-and-drop widgets, eliminating the need to write code for the front end. &nbsp; Blynk also includes other tools such as over-the-air (OTA), device provisioning, user management, organaizations, alerts and notifications, automations, and data analytics. &nbsp; 
 
 This integration will configure bi-directional communication between any [Particle](https://www.particle.io/) device and [Blynk IoT](https://blynk.io/). &nbsp; Both a Blynk web dashboard and mobile app will be generated that will display data from the Particle device, and they will be used to control the Particle device remotely.  
 
+<!--
 Any Particle device (Tracker One, Tracker SoM, Boron, B Series SoM, Photon 2, P2, Argon, Photon, Electron, E Series, Core) running the provided firmware will be sending two channels of simulated sensor data from the hardware to Blynk. &nbsp; One channel will be integer values, and the other will be a floating point value. &nbsp; The data sent will be visualized on the Blynk web dashboard or mobile app in both a chart and a value display. &nbsp;  Additionally, a switch widget on the web dashboard and mobile app will send data to the hardware to control it. &nbsp; The switch data is simply an ON/Off (1/0) state that will be sent back to Blynk by the firmware to control a Blynk LED widget, and it will toggle the state of the built-in LED on the Particle device if it exists. &nbsp; A UTC based timestamp will also be displayed on the web dashboard and mobile app so the last time data was published from the Particle device will be known. &nbsp; 
+-->
 
 ## Functional Requirements
+- Works with any Particle device (Tracker One, Tracker SoM, Boron, B Series SoM, Photon 2, P2, Argon, Photon, Electron, E Series, Core)
 - The firmware on the Particle hardware will push data that includes an integer value and a floating point number (simulated sensor value or other source) at a regular interval of every 5 minutes (adjustable in the firmware).
-- A date/time stamp in UTC must be included with data sent to Blynk so the last time data was sent will be visible.
+- A date/time stamp in UTC must be included with data sent to Blynk and visible to the user.
 - The last integer value, floating point value, and UTC datetime stamp must be displayed on the web dashboard and mobile app.
 - The historical values for the integer and floating point value must be displayed in a line chart.  
 - Multiple Particle devices must be able to use the same Particle webhook. 
@@ -27,9 +31,7 @@ The firmware sketch sends an integer value from the millis() function (number of
 
 The Particle hardware will also be controlled remotely from the Blynk web dashboard or mobile app. &nbsp; When the state of the switch widget on the Blynk web dashboard and mobile app is changed, a Blynk webhook is called. &nbsp; The webhook makes a Particle HTTP API call to a Particle cloud function with a device unique token that sends data to the Particle hardware. &nbsp; A firmware function on the Particle hardware reacts to the data received, returns a result code, and then toggles the virtual LED widget on the Blynk web dashboard and mobile app, and toggles the state of the built-in LED if the Particle hardware has one.  &nbsp;
 
-The blueprint includes a sketch (.ino file) that is uploaded to the Particle hardware. &nbsp; The Blynk device template, datastreams, web dashboard ,and mobile app (iOS/Android) are all pre-configured. &nbsp; Instructions are included later in this readme.md on how to configure the Particle integration webhook, generate a Particle access token, and how to create a Blynk webhook. &nbsp;
-
-## Components Used in This Project
+## Components Used in This Integration
 - [Particle Console](https://console.particle.io/) to activate the hardware and set up the integration/webhook. 
 - Blynk Console and [Blynk App](https://docs.blynk.io/en/downloads/blynk-apps-for-ios-and-android?_gl=1*hxem43*_ga*NTQ1NjUzMTkwLjE2NjY1NTA3MTk.*_ga_E376ZQ635Y*MTY4NzE3MTI1Mi44OC4xLjE2ODcxNzEyNTQuMC4wLjA.) for web and mobile dashboards
 - Particle Web IDE, Particle Workbench or Particle Comand Line to upload firmware.
@@ -46,8 +48,6 @@ The blueprint includes a sketch (.ino file) that is uploaded to the Particle har
   - **Core** is a WiFi device with built-in LED on D7. 
 
 <!-- Tracker One, Tracker SOM, Boron, B Series SoM, Photon 2, P2, Argon, Photon, Electron, E Series, Core -->
-
-
 
 ## Configuring Blynk Services
 Navigate to Blynk online and either [login](https://blynk.cloud/dashboard/login) or [create a new account](https://blynk.cloud/dashboard/register). &nbsp; A FREE account is available, or check the [pricing](https://blynk.io/pricing) page for subscription options. &nbsp;
