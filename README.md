@@ -95,12 +95,21 @@ From this point you need to create a Blynk webhook, and a Particle integration w
 
 ## 3. Create Blynk Webhook
 
-## Create Particle Integraton Webhook
+## 4. Create Particle Integration Webhook
 
-## Testing
+## 5. Create a Particle Access Token
+
+## 6. Create the Blynk Webhook
+
+## 7. Testing
+
+## Troubleshooting
+
+## Conclusiong
+
+## Next Steps
 
 ## Related Links
-
 [Blynk Troubleshooting guide](https://docs.blynk.io/en/troubleshooting/general-issues)<br/>
 [Blynk Documentation](https://docs.blynk.io/)<br/>
 [How to connect a Particle device to Blynk](https://docs.blynk.io/en/hardware-guides/particle)<br/>
