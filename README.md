@@ -104,7 +104,7 @@ From this point you need to create a Blynk webhook, and a Particle integration w
 
 ## 3. Create Particle Integration Webhook
 
-## 4. Create a Particle Access Token
+## 4. Generate a Particle Access Token
 
 ## 5. Create the Blynk Webhook
 
