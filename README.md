@@ -125,7 +125,7 @@ We are going to create a Particle integration webhook running on the Particle cl
 
 ![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/1d642d81da33278da8cb33254d4c2e98dc024112/particle_device_blueprint%20(7).png "New Integration")
 
-5. The keys on the left (token, V6, V14, V15, V16, V17) refer to Blynk virtual pins (datastreams), and the values on the right for ‘{{t}} {{PARTICLE_PUBLISHED_AT}} {{v14}} {{v15}} ..’ are variables from the firmware that will be passed from the Particle.publish() function. &nbsp; Those values passed by the Particle.publish() function will replace the placeholders in the '{{}}' [Mustache Template](https://docs.particle.io/reference/cloud-apis/webhooks/#variable-substitution). &nbsp; 
+5. The keys on the left (token, V6, V14, V15, V16, V17) refer to Blynk virtual pins (datastreams), and the values on the right for ‘{{t}} {{PARTICLE_PUBLISHED_AT}} {{v14}} {{v15}} ..’ are variables from the firmware that will be passed from the Particle.publish() function. &nbsp; Those values passed by the Particle.publish() function will replace the placeholders in the '{{}}' [Mustache Template](https://docs.particle.io/reference/cloud-apis/webhooks/#variable-substitution) (see code snippet that follows). &nbsp; The value ‘PARTICLE_PUBLISHED_AT’ for virtual pin V6 is a Particle pre-defined variable that provides a UTC timestamp for when the webhook is executed. &nbsp; 
 
 Particle.publish() call in the firmware:
 <pre><code>
@@ -135,7 +135,7 @@ snprintf(data, sizeof(data), &quot;{\&quot;t\&quot;:\&quot;%s\&quot;,\&quot;v14\
 bool pub_result = Particle.publish(&quot;blynk_https_get&quot;, data, PRIVATE);
 </code></pre>
 
-6. The value ‘PARTICLE_PUBLISHED_AT’ for virtual pin V6 is a Particle pre-defined variable that provides a UTC timestamp for when the webhook is executed. &nbsp; At the bottom of the form, make sure the ‘ENFORCE SSL’ option is set to ‘Yes’, and then click the ‘SAVE’ button to save your changes. 
+6. At the bottom of the form, make sure the ‘ENFORCE SSL’ option is set to ‘Yes’, and then click the ‘SAVE’ button to save your changes. 
 
 ![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/a4f6f5beb63fc93c58233c2adb3fe6d357ca5d01/particle_device_blueprint%20(8).jpeg "New Integration")
 
