@@ -144,6 +144,7 @@ Blynk Datastreams are bi-directional channels assigned a data type and link to d
 
 The datastreams should appear like the image shown below when properly configured.
 
+![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/3f01dddde87793a48977412cc597aca8b060f49b/particle_integration_guide(20).png "Datastreams")
 
 
 ##### Create Web Dashboard
