@@ -142,13 +142,26 @@ Blynk Datastreams are bi-directional channels assigned a data type and link to d
   </tr>
 </table>
 
-The datastreams should appear like the image shown below when properly configured.
+The datastreams should appear like the image shown below when properly configured (fields Pin, Data Type, Is Raw, Min, Max, and Default Value must match exactly).
 
 ![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/3f01dddde87793a48977412cc597aca8b060f49b/particle_integration_guide(20).png "Datastreams")
 
 
 ##### Create Web Dashboard
+The [Web Dashboard](https://docs.blynk.io/en/blynk.console/templates/dashboard) allows you to visualize data from a device or control the device using [Widgets](https://docs.blynk.io/en/blynk.console/widgets-console) (GUI elements). 
+
 1. Click on the 'Web Dashboard' tab and then the 'Edit' button at the upper right of the page. 
+2. Drag and drop the following widgets to the dashboard (top to bottom, left to right) using the layout shown in the image that follows: Label, Chart, Label, Chart, Switch, LED, Label.  
+3. Configure each widget as showin in the images that follow. 
+
+<table>
+    <tr>
+        <td>
+        </td>
+        <td>
+        </td>
+    </tr>
+</table>
 
 
 #### Configure Blynk App
