@@ -154,15 +154,14 @@ The [Web Dashboard](https://docs.blynk.io/en/blynk.console/templates/dashboard) 
 2. Drag and drop the following widgets to the dashboard (top to bottom, left to right) using the layout shown in the image that follows: Label, Chart, Label, Chart, Switch, LED, Label.  
 3. Configure each widget as showin in the images that follow. 
 
-<table>
-    <tr>
-        <td>![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/ca586c7617805509a877adc0ae7209e98ef8075f/particle_integration_guide(21).png "Dashboard layout")
-        </td>
-        <td>![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/ca586c7617805509a877adc0ae7209e98ef8075f/particle_integration_guide(22).png "V14 label")
-        </td>
-    </tr>
-</table>
-
+![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/ca586c7617805509a877adc0ae7209e98ef8075f/particle_integration_guide(21).png "Dashboard layout")
+![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/ca586c7617805509a877adc0ae7209e98ef8075f/particle_integration_guide(22).png "V14 label")
+![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/030237331da358ff5a659b5e954ffa3517379508/particle_integration_guide(23).png "V14 chart")
+![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/030237331da358ff5a659b5e954ffa3517379508/particle_integration_guide(24).png "V15 label")
+![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/030237331da358ff5a659b5e954ffa3517379508/particle_integration_guide(25).png "V15 chart")
+![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/030237331da358ff5a659b5e954ffa3517379508/particle_integration_guide(26).png "V16 switch")
+![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/030237331da358ff5a659b5e954ffa3517379508/particle_integration_guide(27).png "V17 LED")
+![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/030237331da358ff5a659b5e954ffa3517379508/particle_integration_guide(28).png "V6 label")
 
 #### Configure Blynk App
 
