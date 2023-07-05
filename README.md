@@ -153,6 +153,7 @@ The [Web Dashboard](https://docs.blynk.io/en/blynk.console/templates/dashboard) 
 1. Click on the 'Web Dashboard' tab and then the 'Edit' button at the upper right of the page. 
 2. Drag and drop the following widgets to the dashboard (top to bottom, left to right) using the layout shown in the image that follows: Label, Chart, Label, Chart, Switch, LED, Label.  
 3. Configure each widget as showin in the images that follow. 
+4. After all widgets are configured, click 'Save and Apply'. 
 
 ![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/ca586c7617805509a877adc0ae7209e98ef8075f/particle_integration_guide(21).png "Dashboard layout")
 ![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/ca586c7617805509a877adc0ae7209e98ef8075f/particle_integration_guide(22).png "V14 label")
