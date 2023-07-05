@@ -156,9 +156,9 @@ The [Web Dashboard](https://docs.blynk.io/en/blynk.console/templates/dashboard) 
 
 <table>
     <tr>
-        <td>
+        <td>![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/ca586c7617805509a877adc0ae7209e98ef8075f/particle_integration_guide(21).png "Dashboard layout")
         </td>
-        <td>
+        <td>![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/ca586c7617805509a877adc0ae7209e98ef8075f/particle_integration_guide(22).png "V14 label")
         </td>
     </tr>
 </table>
