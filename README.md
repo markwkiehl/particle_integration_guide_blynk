@@ -209,11 +209,11 @@ Bearer 40_character_Particle_access_token
 5. Review the Particle integration log to see if it was triggered successfully and the data what was pushed to it from the Particle device. 
 
 ## Troubleshooting
-If your Particle device has a built-in RGB then it should be breathing cyan if it is connected to the Particle cloud.  &nbsp; Make sure the firmware code provided by activating the Blynk device was uploaded to the hardware. &nbsp;
+Make sure the BLYNK_AUTH_TOKEN in the sketch 'particle_device_blueprint.ino' matches what is shown in the Blynk console 'Search' -> 'Device' -> 'Device Info'. &nbsp;
+
+If your Particle device has a built-in RGB then it should be breathing cyan if it is connected to the Particle cloud.  &nbsp; 
 
 Perform all of the tests under **Testing** to be sure that each communication step from the Particle hardware to Blynk and back works properly. &nbsp;
-
-Make sure the BLYNK_AUTH_TOKEN in the sketch 'particle_device_blueprint.ino' matches what is shown in the Blynk console 'Search' -> 'Device' -> 'Device Info'. &nbsp;
 
 ## Conclusion
 By connecting any Particle device to Blynk, you can remotely visualize data sent by the device, and control it remotely. &nbsp; Blynk's no-code web dashboard and mobile apps make it easy to create a custom dashboard for interaction with your Particle device. &nbsp;
