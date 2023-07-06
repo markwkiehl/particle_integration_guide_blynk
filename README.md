@@ -168,7 +168,7 @@ The [Web Dashboard](https://docs.blynk.io/en/blynk.console/templates/dashboard) 
 
 #### Get the Firmware
 The firmware sketch ['particle_device_blueprint.ino'](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/56bf8a5643239507113253e454ab05506da877e5/particle_device_blueprint.ino) can be downloaded by clicking on the link. &nbsp;
-{modify blynk references in the sketch}
+Note that in the next step you will modify the BLYNK_TEMPLATE_ID, BLYNK_TEMPLATE_NAME and BLYNK_AUTH_TOKEN constants in that sketch to match the activated Blynk device. &nbsp;
 
 #### Activate New Blynk Device
 Static tokens will be used for device authentication because the Particle hardware may be  cellular. &nbsp; We will generate a static authentication token (BLYNK_AUTH_TOKEN) using the manual method. &nbsp; 
@@ -178,11 +178,37 @@ Static tokens will be used for device authentication because the Particle hardwa
 3. Select the template 'ParticleDeviceIntegration' from the 'TEMPLATE' drop down list.
 4. In the 'DEVICE NAME' field, enter a name such as the Particle device name or ID listed in the [Particle Console](https://docs.particle.io/getting-started/console/console/#devices). &nbsp;
 5. Click the 'Create' button. 
-6. In the upper right the BLYNK_TEMPLATE_ID, BLYNK_TEMPLATE_NAME and BLYNK_AUTH_TOKEN will be displayed. &nbsp; Use the copy function and then update the firmware sketch ['particle_device_blueprint.ino'](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/56bf8a5643239507113253e454ab05506da877e5/particle_device_blueprint.ino) you previously downloaded with this information.  &nbsp; Use this information for only one device connected to Blynk. &nbsp; This information is always available under the 'Device Info' tab for a device. &nbsp;
+6. In the upper right the BLYNK_TEMPLATE_ID, BLYNK_TEMPLATE_NAME and BLYNK_AUTH_TOKEN will be displayed. &nbsp; Use the copy function and then update the firmware sketch ['particle_device_blueprint.ino'](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/56bf8a5643239507113253e454ab05506da877e5/particle_device_blueprint.ino) you previously downloaded with this information.  &nbsp; Use this information for only one device connected to Blynk. &nbsp; This information is always available under the 'Device Info' tab. &nbsp;
+
+<pre><code>
+/////////////////////////////////////////////////////////////////////////
+// Blynk
+
+// Update below with your Blynk auth token for your device (automatically populated by Blueprint)
+#define BLYNK_TEMPLATE_ID "13 char template id"
+#define BLYNK_TEMPLATE_NAME "ParticleDeviceBlueprint"
+#define BLYNK_AUTH_TOKEN "your Blynk 32 char auth token"
+</code></pre>
 
 #### Create Blynk App
-The exact steps to create a Blynk mobile app may vary between iOS and Android, but begin by tapping on a device, and tap on the wrench icon and then the ‘+’ icon to add a widget. Create the following widgets:
-1. 
+The Blynk app in [Developer Mode](https://docs.blynk.io/en/blynk.apps/overview#developer-mode) enables you to interactively build a custom app by selecting widgets and then configuring them. &nbsp; When the app is in [End-user Mode](https://docs.blynk.io/en/blynk.apps/overview#end-user-mode) it will present the app with widgets to the user with a behaviour just like any other native app. &nbsp;
+
+Create a custom app while in the [Developer Mode](https://docs.blynk.io/en/blynk.apps/constructor#how-to-enable-developer-mode) using the [Mobile Dashboard Editor](https://docs.blynk.io/en/blynk.apps/constructor). &nbsp; The exact steps vary between iOS and Android, but begin by tapping on a the Particle device you activated earlier, and tap on the wrench icon and then the ‘+’ icon to add a widget. Create the following widgets:
+1. SuperChart (V14 &amp; V15)
+2. Labeled Value (V14)
+3. Labeled Value (V15)
+4. Button (V16)
+5. LED (V17)
+6. Labeled Value (V6)
+
+Tap and hold your finger on a widget, and then when the resize handles appear, drag it to the correct position, and then release and tap on the handle to resize the widget. &nbsp; Do this for each widget until the page appears as shown below.
+
+
+
+After the widget is added to the dashboard canvas, you can tap on it to configure it. &nbsp; Every widget has a 'Settings' and 'Design' options at the bottom of the 
+Configure each widget as shown in the images below:
+
+1. SuperChart.  
 
 #### Next
 From this point you need to create a Blynk webhook, and a Particle integration webhook. &nbsp; All of the details on how to do this follow in the sections 'Create Blynk Webhook', 'Create Particle Integration Webhook', and 'Testing'' that follow'. &nbsp;
