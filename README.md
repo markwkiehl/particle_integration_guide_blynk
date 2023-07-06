@@ -201,14 +201,41 @@ Create a custom app while in the [Developer Mode](https://docs.blynk.io/en/blynk
 5. LED (V17)
 6. Labeled Value (V6)
 
-Tap and hold your finger on a widget, and then when the resize handles appear, drag it to the correct position, and then release and tap on the handle to resize the widget. &nbsp; Do this for each widget until the page appears as shown below.
+Tap and hold your finger on a widget, and then when the resize handles appear, drag it to the correct position, and then release and tap on the handle to resize the widget. &nbsp; Do this for each widget until the page appears as shown below. &nbsp; (the border of each widget has been highlighted in red and labeled in red to make identification easier)
 
-![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/blob/5ac68b6fcaae92e7ee5d4de6add5c340401fca3a/particle_integration_guide(30).png "Dashboard")
+![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/5ac68b6fcaae92e7ee5d4de6add5c340401fca3a/particle_integration_guide(30).png "Dashboard")
 
 After the widget is added to the dashboard canvas, you can tap on it to configure it. &nbsp; Every widget has a 'Settings' and 'Design' options at the bottom of the 
 Configure each widget as shown in the images below:
 
-1. SuperChart.  
+1. SuperChart.  Configure the widget for datastreams V14 and V15 as shown in the images below: 
+
+![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/7a4460f4f67decec9efb86e69015bb6ac673d0c4/particle_integration_guide(31).png "SuperChart")
+
+![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/7a4460f4f67decec9efb86e69015bb6ac673d0c4/particle_integration_guide(32).png "SuperChart V14")
+
+![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/7a4460f4f67decec9efb86e69015bb6ac673d0c4/particle_integration_guide(33).png "SuperChart V15")
+
+2. Labeled Value. Configure the widget for datastream V14 as shown in the image below:
+
+![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/7a4460f4f67decec9efb86e69015bb6ac673d0c4/particle_integration_guide(34).png "Labeled Value for V14)
+
+3. Labeled Value. Configure the widget for datastream V15 as shown in the image below:
+
+![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/7a4460f4f67decec9efb86e69015bb6ac673d0c4/particle_integration_guide(35).png "Labeled Value for V15)
+
+4. Button.  Configure the widget as mode 'Switch' for datastream V16 as shown below:
+
+![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/7a4460f4f67decec9efb86e69015bb6ac673d0c4/particle_integration_guide(36).png "Button V16")
+
+5. LED.  Configure the widget for datastream V17 as shown below:
+
+![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/7a4460f4f67decec9efb86e69015bb6ac673d0c4/particle_integration_guide(37).png "LED V17")
+
+6. Value Display. Configure the widget for datastream V6 as shown below:
+
+![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/7a4460f4f67decec9efb86e69015bb6ac673d0c4/particle_integration_guide(38).png "Value Display V6")
+
 
 #### Next
 From this point you need to create a Blynk webhook, and a Particle integration webhook. &nbsp; All of the details on how to do this follow in the sections 'Create Blynk Webhook', 'Create Particle Integration Webhook', and 'Testing'' that follow'. &nbsp;
