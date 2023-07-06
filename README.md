@@ -203,7 +203,7 @@ Create a custom app while in the [Developer Mode](https://docs.blynk.io/en/blynk
 
 Tap and hold your finger on a widget, and then when the resize handles appear, drag it to the correct position, and then release and tap on the handle to resize the widget. &nbsp; Do this for each widget until the page appears as shown below.
 
-
+![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/blob/5ac68b6fcaae92e7ee5d4de6add5c340401fca3a/particle_integration_guide(30).png "Dashboard")
 
 After the widget is added to the dashboard canvas, you can tap on it to configure it. &nbsp; Every widget has a 'Settings' and 'Design' options at the bottom of the 
 Configure each widget as shown in the images below:
